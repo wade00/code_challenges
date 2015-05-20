@@ -1,13 +1,15 @@
-<h1>Welcome to FizzBuzz</h1>
-<% (0..@number).each do |number| %>
-  <% case %>
-    <% when number % 5 == 0 && number % 3 == 0 %>
-      <p class="number"><%= "FizzBuzz" %></p>
-    <% when number % 3 == 0 %>
-      <p class="number"><%= "Fizz" %></p>
-    <% when number % 5 == 0 %>
-      <p class="number"><%= "Buzz" %></p>
-    <% else %>
-      <p class="number"><%= number %></p>
-    <% end %>
-<% end %>
+<div class="container">
+  <h1>Welcome to FizzBuzz</h1>
+  <% (0..@number).each do |number| %>
+    <% case %>
+      <% when number % 5 == 0 && number % 3 == 0 %>
+        <p class="number"><%= "FizzBuzz" %></p>
+      <% when number % 3 == 0 %>
+        <p class="number"><%= "Fizz" %></p>
+      <% when number % 5 == 0 %>
+        <p class="number"><%= "Buzz" %></p>
+      <% else %>
+        <p class="number"><%= number %></p>
+      <% end %>
+  <% end %>
+</div>
