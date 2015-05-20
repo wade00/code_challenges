@@ -1,0 +1,13 @@
+<h1>Welcome to FizzBuzz</h1>
+<% (0..@number).each do |number| %>
+  <% case number %>
+    <% when number % 3 == 0 %>
+      <%= "Fizz" %>
+    <% when number % 5 == 0 %>
+      <%= "Buzz" %>
+    <% when number % 5 == 0 && number % 3 == 0 %>
+      <%= "FizzBuzz" %>
+    <% else %>
+      <%= number %>
+    <% end %>
+<% end %>
